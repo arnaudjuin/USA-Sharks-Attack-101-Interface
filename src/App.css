@@ -90,6 +90,14 @@
   border-radius: 3px;
 }
 
+div.activity{
+  color : black;
+}
+
+
+div.type{
+  color : black;
+}
 .filter-container {
   display: flex;
   flex-direction: row;
@@ -98,18 +106,18 @@
   width: 740px;
 }
 .card-container {
-  width: 49vw;
+  flex: 30%;
+  height: calc(100% - 52px);
   background-color: #fbfbfb;
   margin-top: 140px;
-  padding: 20px 0;
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
   justify-content: space-around;
 }
+
 .card {
   width: 44%;
-  height: auto;
   margin-bottom: 20px;
   background-color: transparent;
   border: 0;
@@ -123,27 +131,29 @@ h2 {
   font-size: 1rem;
   margin: 10px 0 0;
 }
+
+.attack-data {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+}
+.white-card{
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  background-color: white!important;
+}
 .card__image {
-  width: 100%;
-  height: 180px;
+  padding : 10px;
+  width: 150px;
+  height: 80px;
   background-size: cover;
   background-position: center center;
 }
 
-.card__price {
-  width: 70px;
-  height: 44px;
-  background-color: #41abf5;
-  position: absolute;
-  top: 120px;
-  left: 0;
-  color: #fafafa;
-  font-size: 18px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  letter-spacing: 0.03rem;
-}
+
 .card__info {
   color: #555;
   font-size: 14px;
@@ -155,12 +165,25 @@ h2 {
   color: #666;
   font-size: 15px;
 }
+
+.marker{
+  color:red!important
+}
+
+.flex-container {
+  height: 80vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: row;
+}
+
+
 .map-container {
   top: 160px;
-  width: 740px;
-  height: calc(100% - 52px);
-  position: fixed;
-  right: 0;
+  width: 200px;
+  margin-top: 140px;
+  flex: 20%;
+  height: calc(130% - 52px);
 }
 .extra-info {
   display: none;
